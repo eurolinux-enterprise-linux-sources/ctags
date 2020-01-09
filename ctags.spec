@@ -1,7 +1,7 @@
 Summary: A C programming language indexing and/or cross-reference tool
 Name: ctags
 Version: 5.8
-Release: 11%{?dist}
+Release: 13%{?dist}
 License: GPLv2+ and LGPLv2+ and Public Domain
 Group: Development/Tools
 URL: http://ctags.sourceforge.net/
@@ -93,6 +93,12 @@ rm -rf %{buildroot}
 %{_mandir}/man1/etags.%{name}.1*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 5.8-13
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 5.8-12
+- Mass rebuild 2013-12-27
+
 * Thu Jun 13 2013 John Dennis <jdennis@redhat.com> - 5.8-11
 - add ctags-5.8-memmove.patch
   bug #284 absoluteFilename uses strcpy on overlapping strings 
